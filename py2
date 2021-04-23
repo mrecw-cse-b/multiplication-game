@@ -1,0 +1,20 @@
+print("Multiplication quiz")
+print("Ten questions, ten answers , one winner!!!!!")
+import random
+correct_answer=0
+wrong_answer=0
+for i in range (1,11,1):
+      x=random.randint(1,15)
+      y=random.randint(1,15)
+      result=x*y
+      print("Question no {} : {} X {} = ".format(i,x,y))
+      user_input=int(input("Answer Please : "))
+      if user_input==result:
+            print("correct answer!!!!!!!!!!!!!")
+            correct_answer +=1
+      else:
+            print("Sorry, Wrong Answer, The correct Answer is {} X {} ={}".format(x,y,result))
+            wrong_answer +=1
+
+print("Game Over!!!!!!!!!!!!!!!!!")
+print("The correct answers : {}, wrong answers :{}".format(correct_answer,wrong_answer))
